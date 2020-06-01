@@ -54,6 +54,7 @@ $ test.py -n {directoryname}
 
 ## Results
 ### train01
+
 ![fig1](https://github.com/spider-man-tm/pix2pix_gray_to_color/blob/master/output/figure/01_pix2pix_v1/bce_loss.png)
 ![fig2](https://github.com/spider-man-tm/pix2pix_gray_to_color/blob/master/output/figure/01_pix2pix_v1/l1_loss.png)
 
@@ -62,6 +63,7 @@ Changes point from train1
 - Adversarial Loss(both of D & G) changed from BCE to HingeLoss
 - Changed Batch Normalization of D to Instance Normalization
 - D weight update frequency halved
+
 ![fig3](https://github.com/spider-man-tm/pix2pix_gray_to_color/blob/master/output/figure/02_pix2pix_v2/adv_loss.png)
 ![fig4](https://github.com/spider-man-tm/pix2pix_gray_to_color/blob/master/output/figure/02_pix2pix_v2/l1_loss.png)
 
@@ -72,6 +74,7 @@ Changes point from train1
 - Image size changed from 320 to 256. (following the paper)
 - Changed the number of areas in PatchGAN from 10x10 to 4x4.
 - Removed augmentation blur.
+
 ![fig5](https://github.com/spider-man-tm/pix2pix_gray_to_color/blob/master/output/figure/03_pix2pix_v3/bce_loss.png)
 
 
@@ -86,6 +89,7 @@ Changes point from train1
 - Align the learning rate with the original paper. (1e-4-> 2e-4)
 - Image size is changed. (320 -> 352)
 - Changed the number of areas in PatchGAN from 10x10 to 11x11.
+
 ![fig6](https://github.com/spider-man-tm/pix2pix_gray_to_color/blob/master/output/figure/04_pix2pix_v4/adv_loss.png)
 ![fig7](https://github.com/spider-man-tm/pix2pix_gray_to_color/blob/master/output/figure/04_pix2pix_v4/l1_loss.png)
 
